@@ -1,0 +1,49 @@
+.header .container {
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px; 
+
+    .header-brand {
+        color: red;
+        font-size: 32px;
+        text-decoration: none;
+    }
+
+    .login_button{
+        text-decoration: none;
+        font-size: 18px;
+        color: blue;
+        transition: transform 2s;
+        padding: 10px 20px;   
+        border: 1px solid blue;
+        border-radius: 25px; 
+        margin-right: 5px;
+    }
+
+    .login_button:hover { 
+        padding: 10px 20px;
+        background-color: blue;
+        color: white;
+        font-size: 18px;
+        border-radius: 25px;
+        text-decoration: none;
+    }
+    .signup_button{
+        padding: 10px 20px;
+        background-color: blue;
+        color: white;
+        font-size: 18px;
+        border-radius: 25px;
+        text-decoration: none;
+        border: 1px solid blue;
+    }
+
+    .signup_button:hover {
+        background-color: white;
+        color:blue; 
+    }
+}
