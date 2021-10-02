@@ -59,7 +59,7 @@ module.exports = class UserRouteController {
 				await createToken({
 					session_id: session._id,
 				})
-			).redirect("/");
+			).redirect("/profile");
 		} catch (error) {
 			res.render("login", {
 				error: error + "",

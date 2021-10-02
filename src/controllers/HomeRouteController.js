@@ -6,4 +6,10 @@ module.exports = class HomeRouteController {
 			user: req.user, 
 		});
 	}
+
+	static async ProfileRouteGetController(req, res) { 
+		res.render("home",{
+			user: req.user, 
+		})
+	}
 };

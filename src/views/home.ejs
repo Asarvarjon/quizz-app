@@ -1,0 +1,23 @@
+<% var user %> 
+
+<%- include("./parts/header.ejs") %>
+    <header class="header">
+        <div class="container">
+            <a href="#" class="header-brand">
+                <i class="fas fa-book-open"></i> 
+                Quizli
+            </a> 
+            <div class="auth">
+                  <a href="#">
+                      <%= user.name %> 
+                  </a>
+
+                  <a href="/exit">
+                    <img src="public/icons/logout.svg" alt="" class="logout">
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+<%- include("./parts/footer.ejs") %> 
