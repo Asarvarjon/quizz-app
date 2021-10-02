@@ -1,0 +1,58 @@
+<% var error %> 
+
+<%- include("./parts/header.ejs")  %> 
+<header class="header">
+    <div class="container">
+        <a href="#" class="header-brand">
+            <i class="fas fa-book-open"></i> 
+            Quizli
+        </a> 
+        <div class="auth">
+            <a href="/login" class="login_button">
+              Kirish
+            </a>
+            <a href="/signup" class="signup_button">
+               Ro'yhatdan o'tish
+            </a>
+
+        </div>
+    </div>
+</header>
+
+<main class="main">
+    <div class="container">
+
+        <div class="main_photo">
+            <img src="public/icons/login.jpg" alt="" class="friends_photo">
+        </div>
+        <div class="main_info">
+            <h2 class="main-title">
+                Kirish
+                <span class="main_span">
+                    Profilingizga kiring va yarating yoki o'ynang!
+                </span>
+            </h2>  
+            <% if(error) {%>
+                <div class="alert">
+                   <%= error  %> 
+                </div> 
+            <% } %> 
+
+            <form method="POST" class="form">
+                <input type="text" placeholder="Username" name="name" class="input">
+                <input type="password" placeholder="Password" name="password" class="input"> 
+                <button class="btn">Login</button>
+            </form>
+            <a href="/signup" class="sign_up_link">
+            Ro'yhatdan o'tish
+            </a>
+
+        </div>
+       
+    </div>
+</main>
+
+
+
+
+<%- include("./parts/footer.ejs")  %> 

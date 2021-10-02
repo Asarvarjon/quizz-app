@@ -46,7 +46,7 @@ ul, ol {
 
 
  .main .container {
-     padding: 50px 0px;
+     padding-top: 50px;
      display: flex;
      flex-direction: row;
      align-items: center;
@@ -109,5 +109,13 @@ ul, ol {
 
      .main_photo{
          width: 50%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+
+         .friends_photo {
+            max-width: 100%; 
+            border-radius: 15px;
+         }
      }
  }

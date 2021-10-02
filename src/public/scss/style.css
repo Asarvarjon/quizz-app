@@ -49,7 +49,7 @@ ul, ol {
 }
 
 .main .container {
-  padding: 50px 0px;
+  padding-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -140,6 +140,20 @@ ul, ol {
 
 .main .container .main_photo {
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .container .main_photo .friends_photo {
+  max-width: 100%;
+  border-radius: 15px;
 }
 
 .header .container {
@@ -203,5 +217,59 @@ ul, ol {
 .header .container .signup_button:hover {
   background-color: white;
   color: blue;
+}
+
+.form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15px;
+}
+
+.form .input {
+  padding: 13px;
+  width: 50%;
+  border: 1px solid blue;
+  margin: 5px 0px;
+  border-radius: 6px;
+  outline: none;
+}
+
+.form .btn {
+  padding: 13px;
+  width: 50%;
+  background-color: blue;
+  border: none;
+  outline: none;
+  margin: 5px 0px;
+  border-radius: 6px;
+  outline: none;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.sign_up_link {
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+  text-decoration: none;
+}
+
+.alert {
+  width: 50%;
+  margin: 10px auto;
+  padding: 15px;
+  background-color: #f83a3a;
+  border-radius: 8px;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

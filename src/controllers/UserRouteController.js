@@ -21,61 +21,16 @@ module.exports = class UserRouteController {
 				name,
 				email,
 				password: await generateHash(password),
-			});
+			}); 
 
-			// await sendEmail(
-			// 	email,
-			// 	"Iltimos pochtangizni tasdiqlang",
-			// 	`Pochtangizni tasdiqlash uchun link`,
-			// 	`<a href="http://localhost:8000/users/verify/${user._id}"/>Tasdiqlash</a>`
-			// );
-
-			console.log(`http://10.10.129.48:8000/users/verify/${user._id}`);
-
-			res.redirect("/users/login");
+			res.redirect("/login");
 		} catch (error) {
 			console.log(error);
 			res.render("registration", {
 				error: error + "",
 			});
 		}
-	}
-	static async UserVerifyGetController(req, res) {
-		try {
-			const id = req.params.id;
-
-			if (!id) throw new Error("Verification kalit xato)");
-
-			if (!isValidObjectId(id))
-				throw new Error("Verification kalit xato)");
-
-			const user = await users.findOne({
-				_id: id,
-			});
-
-			if (!user) throw new Error("Verification kalit xato)");
-
-			let x = await users.updateOne(
-				{
-					_id: id,
-				},
-				{
-					isVerified: true,
-				}
-			);
-
-			res.cookie(
-				"token",
-				await createToken({
-					id: user._id,
-				})
-			).redirect("/");
-		} catch (error) {
-			res.render("login", {
-				error: error + "",
-			});
-		}
-	}
+	} 
 	static async UserLoginPostController(req, res) {
 		try {
 			const { email, password } = await LoginValidation(req.body);
