@@ -156,6 +156,101 @@ ul, ol {
   border-radius: 15px;
 }
 
+.profile_main .container {
+  padding: 40px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.profile_main .container .profile-aside {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile_main .container .profile-aside a {
+  padding: 13px;
+  text-decoration: none;
+  text-align: center;
+  width: 50%;
+  background-color: blue;
+  border: none;
+  outline: none;
+  margin: 5px 0px;
+  border-radius: 6px;
+  outline: none;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.profile_main .container .profile-aside h4 {
+  margin: 10px 0px;
+  font-size: 24px;
+}
+
+.profile_main .container .profile-aside ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.profile_main .container .profile-aside ul li {
+  padding: 10px;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+.profile_main .profile-games {
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.profile_main .profile-games .table {
+  width: 100%;
+  border-spacing: 0px;
+}
+
+.profile_main .profile-games .table thead tr th {
+  padding: 20px;
+  background-color: #a3a3a3;
+}
+
+.profile_main .profile-games .table tbody tr td {
+  padding: 10px 20px;
+  text-align: center;
+  background-color: white;
+}
+
 .header .container {
   width: 1140px;
   margin: 0 auto;
@@ -217,6 +312,35 @@ ul, ol {
 .header .container .signup_button:hover {
   background-color: white;
   color: blue;
+}
+
+.auth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.auth .user {
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.auth .exit {
+  width: 30px;
+  margin-left: 20px;
+}
+
+.game-title {
+  margin: 20px 0px;
+  text-align: center;
+  font-size: 28px;
 }
 
 .form {

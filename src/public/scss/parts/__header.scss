@@ -47,3 +47,26 @@
         color:blue; 
     }
 }
+
+.auth {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+
+
+    .user {
+        text-decoration: none;
+        margin-right: 10px;
+    }
+
+    .exit {
+        width: 30px;
+        margin-left: 20px;
+    }
+}
+
+.game-title {
+    margin: 20px 0px;
+    text-align: center;
+    font-size: 28px;
+}

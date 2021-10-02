@@ -1,6 +1,8 @@
 const mongoose = require("mongoose");
 require("../models/UserModel"); 
-require("../models/SessionsModel"); 
+require("../models/SessionsModel");
+require("../models/QuestionModel"); 
+
 
 async function mongo() {
 	try {
