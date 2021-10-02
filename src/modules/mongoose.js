@@ -1,9 +1,6 @@
 const mongoose = require("mongoose");
-require("../models/UserModel");
-require("../models/AdsModel");
-require("../models/CategoryModel");
-require("../models/SessionsModel");
-require("../models/MessagesModel");
+require("../models/UserModel"); 
+require("../models/SessionsModel"); 
 
 async function mongo() {
 	try {
